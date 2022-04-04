@@ -3,7 +3,7 @@ const useReviewFetch =()=>{
     const [review,setReview]=useState([])
     
     useEffect(() => {
-   fetch('data.json')
+   fetch('review.json')
    .then(res =>res.json())
    .then(data=>setReview(data))
     },[review])

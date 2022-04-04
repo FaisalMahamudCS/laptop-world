@@ -1,51 +1,25 @@
 import React from 'react';
+import { useEffect, useState } from "react";
 import {AreaChart,Area, PieChart,Pie,LineChart,BarChart, Bar, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 const Dashboard = () => {
-    const data=[
-        {
-            "month": "Mar",
-            "investment": 100000,
-            "sell": 241,
-            "revenue": 10401
-        },
-        {
-            "month": "Apr",
-            "investment": 200000,
-            "sell": 423,
-            "revenue": 24500
-        },
-        {
-            "month": "May",
-            "investment": 500000,
-            "sell": 726,
-            "revenue": 67010
-        },
-        {
-            "month": "Jun",
-            "investment": 500000,
-            "sell": 529,
-            "revenue": 40405
-        },
-        {
-            "month": "Jul",
-            "investment": 600000,
-            "sell": 601,
-            "revenue": 50900
-        },
-        {
-            "month": "Aug",
-            "investment": 700000,
-            "sell": 670,
-            "revenue": 61000
-        }
-    ]
+    const [data,setData]=useState([]);
+    useEffect(()=>{
+  fetch('data.json')
+  .then(res=>res.json())
+  .then(data=>setData(data))
+
+    },[data])
+  
+  
     return (
         <div className='container'>
             <div className='row'>
-                <div className="col-lg-6">
-       <LineChart width={400} height={500} data={data}>
+                <div className="col-lg-6 mt-5">
+                <h5 class='text-primary text-center'>MONTH WISE SELL</h5>
 
-<Line dataKey={'sell'} ></Line>
+       <LineChart width={500} height={300} data={data}>
+
+<Line type="monotone" dataKey={'sell'}  stroke="#8884d8" strokeWidth={2}></Line>
 <XAxis dataKey={'month'}></XAxis>
 <YAxis dataKey={'sell'}></YAxis>
 <Tooltip></Tooltip>
@@ -53,6 +27,7 @@ const Dashboard = () => {
 
        </div>
        <div  className='col-lg-6 mt-5'>
+       <h5 class='text-primary text-center'>Investment Vs Revenue</h5>
        <BarChart
           width={500}
           height={300}
@@ -66,7 +41,7 @@ const Dashboard = () => {
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="month" />
-          <YAxis datakey="investment"/>
+          <YAxis dataKey="investment"/>
           <Tooltip />
           <Legend />
           <Bar dataKey="investment" stackId="a" fill="#8884d8" />
@@ -74,9 +49,12 @@ const Dashboard = () => {
         </BarChart>
         </div>
         </div>
+        <div className="row">
+            <div className="col-lg-6 mt-5">
+            <h5 class='text-primary text-center'>Investment Vs Revenue</h5>
         <AreaChart
           width={500}
-          height={400}
+          height={300}
           data={data}
           margin={{
             top: 10,
@@ -94,7 +72,15 @@ const Dashboard = () => {
           <Area type="monotone" dataKey="revenue" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
         
         </AreaChart>
-        
+        </div>
+        <div className="col-lg-6 mt-5 ml-5">
+            <h5 class='text-primary text-center'>Investment Vs Revenue</h5>
+          <PieChart width={300} height={500}>
+          <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
+          <Pie data={data} dataKey="revenue" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
+        </PieChart>
+        </div>
+        </div>
        </div>
 
        );

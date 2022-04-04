@@ -11,6 +11,7 @@ const Reviews = (props) => {
             <div className="col ">
     <div className="card">
         <div className='pt-4'>
+            
       <img src={picture}  className="card-img-top img" alt="..."/>
    </div>
       <div className="card-body">

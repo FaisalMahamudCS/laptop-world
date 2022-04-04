@@ -1,44 +1,38 @@
 [
     {
-        "id":"1",
-        "name":"John Adam",
-        "rating":5,
-        "picture":"https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-        "description":"This laptop is the best laptop.It work fast and i can feel it"
+        "month": "Mar",
+        "investment": 100000,
+        "sell": 241,
+        "revenue": 10401
     },
     {
-        "id":"2",
-        "name":"David William",
-        "rating":4,
-        "picture":"https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
-        "description":"I used the laptop.it give me high performance.it never lag"
+        "month": "Apr",
+        "investment": 200000,
+        "sell": 423,
+        "revenue": 24500
     },
     {
-        "id":"3",
-        "name":"Kelvin Watson",
-        "rating":5,
-        "picture":"https://images.unsplash.com/photo-1581599129568-e33151627628?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-        "description":"I have been working with the laptop since 2 year.Not a big issue here."
+        "month": "May",
+        "investment": 500000,
+        "sell": 726,
+        "revenue": 67010
     },
     {
-        "id":"4",
-        "name":"Charlie Green",
-        "rating":3,
-        "picture":"https://images.unsplash.com/photo-1615109398623-88346a601842?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-        "description":"I will give the laptop 3*.Because it has some hardwareome  issue.I had to come to them."
+        "month": "Jun",
+        "investment": 500000,
+        "sell": 529,
+        "revenue": 40405
     },
     {
-        "id":"5",
-        "name":"Alex Smith",
-        "rating":4,
-        "picture":"https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-        "description":"Their customer service is good.i came to solve a software issue in my laptop.they solved.The customer service is good"
+        "month": "Jul",
+        "investment": 600000,
+        "sell": 601,
+        "revenue": 50900
     },
     {
-        "id":"6",
-        "name":"David Alice",
-        "rating":5,
-        "picture":"https://images.unsplash.com/photo-1567784177951-6fa58317e16b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-        "description":"The laptop is so far so good.not even a simple problem or bug in laptop"
+        "month": "Aug",
+        "investment": 700000,
+        "sell": 670,
+        "revenue": 61000
     }
 ]
