@@ -7,7 +7,7 @@ const Review = () => {
         <div className='container pt-5'>
            <div className="row row-cols-1 row-cols-md-3  g-4">
        {
-     review.map(review =><Reviews review={review}></Reviews>)
+     review.map(review =><Reviews key={review.id} review={review}></Reviews>)
        }
 
            </div>
