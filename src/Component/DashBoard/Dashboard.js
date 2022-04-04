@@ -73,9 +73,9 @@ const Dashboard = () => {
         
         </AreaChart>
         </div>
-        <div className="col-lg-6 mt-5 ml-5">
+        <div className="col-lg-6 mt-5 ml-5 container" >
             <h5 class='text-primary text-center'>Investment Vs Revenue</h5>
-          <PieChart width={300} height={500}>
+          <PieChart width={300} height={300}>
           <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
           <Pie data={data} dataKey="revenue" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
         </PieChart>

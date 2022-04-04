@@ -4,16 +4,23 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div className='header'>
-           <nav className=''>
-               <ul className='nav justify-content-center '>
-               <NavLink
+        <div className='header '>
+
+<nav className="navbar nav d-flex justify-content-center   navbar-expand-lg navbar-light ">
+<ul className='nav justify-content-center '>
+     
+  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
+  </button>
+  <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div className="navbar-nav">
+    <NavLink
           className={({ isActive }) => (isActive ? "nav-link text-danger" : "nav-link text-dark")}
           to='/'
         >HOME
             </NavLink>
             <NavLink
-            className={({ isActive }) => (isActive ? "nav-link   text-danger" : "nav-link text-dark")}
+            className={({ isActive }) => (isActive ? "nav-link   text-danger " : "nav-link text-dark")}
           to='/review'
         >REVIEWS
             </NavLink>
@@ -31,9 +38,15 @@ const Header = () => {
           className={({ isActive }) => (isActive ? "nav-link  text-danger" : "nav-link text-dark")}
           to='/about'
         >ABOUT
-            </NavLink>
-               </ul>
-           </nav>
+            </NavLink>       
+    </div>
+  </div>
+  </ul>
+</nav>
+
+
+
+         
         </div>
     );
 };

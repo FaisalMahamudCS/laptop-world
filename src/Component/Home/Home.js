@@ -16,12 +16,14 @@ const showAllReview=()=>{
         <div className='container mt-5'>
            <div className="row">
                <div className="col-lg-7">
+                   <div className='container'>
          <h1 className='head-text'>The Best Laptop</h1><br />
-         <h1 className='head-text text-primary'>With Best Speed and Performance</h1>
-         <p>THis asus laptop is the best .It give you best service.
-            we provide best service after sells .So the product has warranty
+         <h1 className='head-text text-primary'>Best Performance</h1>
+         <p>This asus laptop is the best .It give you best service.
+   we provide best service after sells .So the product has warranty
         </p>
         <button className='btn btn-primary'>Demo</button>
+        </div>
                </div>
                <div className='col-lg-5'>
                <img className='img-fluid' src="https://sc04.alicdn.com/kf/H781f8f65e0d34e9291b93164832bd0879.jpg" alt="" srcset="" />

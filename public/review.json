@@ -3,7 +3,7 @@
         "id":"1",
         "name":"John Adam",
         "rating":5,
-        "picture":"https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "picture":"https://images.unsplash.com/photo-1590086782957-93c06ef21604?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
         "description":"This laptop is the best laptop.It work fast and i can feel it"
     },
     {
@@ -24,8 +24,8 @@
         "id":"4",
         "name":"Charlie Green",
         "rating":3,
-        "picture":"https://images.unsplash.com/photo-1615109398623-88346a601842?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-        "description":"I will give the laptop 3*.Because it has some hardwareome  issue.I had to come to them."
+        "picture":"https://images.unsplash.com/photo-1548372290-8d01b6c8e78c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+        "description":"I will give the laptop 3*.Because it has some hardware  issue.I had to come to them."
     },
     {
         "id":"5",
