@@ -36,7 +36,7 @@ const showAllReview=()=>{
        }
        
        </div>
-       <button onClick={showAllReview} className='btn btn-success mt-3'>See All Review</button>
+       <button onClick={showAllReview} className='btn btn-primary mt-3'>See All Review</button>
         </div>
        
         </div>
