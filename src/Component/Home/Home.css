@@ -5,6 +5,14 @@
     font-weight:bold;
     
 }
+@media only screen and (max-width: 600px) {
+    .head-text{
+        font-family: 'Lato', sans-serif;
+        font-size:35px;
+        font-weight:bold;
+        
+    }
+  }
 p{
     font-family: 'Lato', sans-serif;
 }

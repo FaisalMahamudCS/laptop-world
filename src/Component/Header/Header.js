@@ -6,15 +6,16 @@ const Header = () => {
     return (
         <div className='header '>
 
-<nav className="navbar nav d-flex justify-content-center   navbar-expand-lg navbar-light ">
-<ul className='nav justify-content-center '>
-     
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-  <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div className="navbar-nav">
-    <NavLink
+
+<nav className="navbar navbar-expand-lg navbar-light d-flex justify-content-center">
+  <div className=" ">
+    
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div className="navbar-nav">
+      <NavLink
           className={({ isActive }) => (isActive ? "nav-link text-danger" : "nav-link text-dark")}
           to='/'
         >HOME
@@ -38,15 +39,12 @@ const Header = () => {
           className={({ isActive }) => (isActive ? "nav-link  text-danger" : "nav-link text-dark")}
           to='/about'
         >ABOUT
-            </NavLink>       
+            </NavLink> 
+      </div>
     </div>
   </div>
-  </ul>
 </nav>
 
-
-
-         
         </div>
     );
 };

@@ -26,7 +26,7 @@ const showAllReview=()=>{
         </div>
                </div>
                <div className='col-lg-5'>
-               <img className='img-fluid' src="https://sc04.alicdn.com/kf/H781f8f65e0d34e9291b93164832bd0879.jpg" alt="" srcset="" />
+               <img className='img-fluid' src="https://sc04.alicdn.com/kf/H781f8f65e0d34e9291b93164832bd0879.jpg" alt="" srcSet="" />
                </div>
                </div> 
                <h2>Customers Review {reviews.length}</h2><br/>
@@ -34,7 +34,7 @@ const showAllReview=()=>{
          
            
        {
-           reviews.map(review=><Reviews review={review}></Reviews>)
+           reviews.map(review=><Reviews key={review.id} review={review}></Reviews>)
        }
        
        </div>
